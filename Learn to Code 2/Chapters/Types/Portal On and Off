@@ -1,0 +1,27 @@
+purplePortal.isActive = false
+var gemCounter = 0
+
+
+
+while gemCounter < 7{
+    moveForward()
+    
+    if isOnGem{
+        collectGem()
+        gemCounter += 1
+    }else if isOnClosedSwitch{
+        toggleSwitch()
+        
+    }
+    if isBlocked{
+        if purplePortal.isActive == false{
+            purplePortal.isActive = true
+        }else{
+            purplePortal.isActive = false
+        }
+        turnLeft()
+        turnLeft()
+        
+    }
+    
+}

@@ -1,0 +1,57 @@
+/*pinkPortal.isActive = true
+bluePortal.isActive = false
+var GemCounter = 0
+*/
+
+
+
+/*
+ 
+ while GemCounter < 4{
+    moveForward()
+    if isOnGem{
+        collectGem()
+        GemCounter += 1
+        turnLeft()
+        turnLeft()
+        if bluePortal.isActive == false{
+            bluePortal.isActive = true
+        }else{
+            bluePortal.isActive = false
+            pinkPortal.isActive = false
+        }
+        
+        
+    }
+    if isBlocked{
+        turnLeft()
+        turnLeft()
+        bluePortal.isActive = false
+    }
+}
+*/
+
+/*
+while GemCounter < 4{
+    moveForward()
+    if isOnGem{
+        collectGem()
+        GemCounter += 1
+        turnLeft()
+        turnLeft()
+       if bluePortal.isActive == false{
+           bluePortal.isActive = true
+       }else{
+           bluePortal.isActive = false
+           
+           
+       }
+    }
+    if isBlocked{
+        turnLeft()
+        turnLeft()
+        bluePortal.isActive = false
+        pinkPortal.isActive = false
+    }
+}
+ */
