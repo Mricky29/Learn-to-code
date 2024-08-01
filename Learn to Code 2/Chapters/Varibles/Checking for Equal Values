@@ -1,6 +1,7 @@
 
 //checking notes
 
+
 let switchCounter = numberOfSwitches
 var gemCounter = 0
 
