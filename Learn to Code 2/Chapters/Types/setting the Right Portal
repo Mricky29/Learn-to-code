@@ -87,7 +87,10 @@ while GemCounter < 4{
 
  /*
  solution 4
- 
+ pinkPortal.isActive = false
+bluePortal.isActive = false
+var gemCounter = 0
+
 while gemCounter < 4{
     moveForward()
     if isOnGem{
