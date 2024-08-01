@@ -1,12 +1,37 @@
+//4 possible solutions
+
+
+//solution 1
+pinkPortal.isActive = false
+bluePortal.isActive = false
+var gemCounter = 0
+
+while gemCounter < 4{
+    moveForward()
+    if isOnGem{
+        collectGem()
+        gemCounter += 1
+    }
+    if isBlocked{
+        turnLeft()
+        turnLeft()
+        if bluePortal.isActive == true{
+            bluePortal.isActive = false
+        }else{
+            bluePortal.isActive = true
+            pinkPortal.isActive = true
+        }
+    }
+}
+
+
 /*pinkPortal.isActive = true
 bluePortal.isActive = false
 var GemCounter = 0
 */
 
-
-
 /*
- 
+ Solution 2
  while GemCounter < 4{
     moveForward()
     if isOnGem{
@@ -32,6 +57,7 @@ var GemCounter = 0
 */
 
 /*
+Solution 3
 while GemCounter < 4{
     moveForward()
     if isOnGem{
@@ -55,3 +81,33 @@ while GemCounter < 4{
     }
 }
  */
+
+
+
+
+ /*
+ solution 4
+ 
+while gemCounter < 4{
+    moveForward()
+    if isOnGem{
+        collectGem()
+        GemCounter += 1
+        turnLeft()
+        turnLeft()
+        
+        if pinkPortal.isActive == false{
+            pinkPortal.isActive = true
+        }else{
+            bluePortal.isActive = true
+            bluePortal.isActive = false
+        }
+        
+    }
+    if isBlocked{
+        turnLeft()
+        turnLeft()
+        
+    }
+}
+  */
