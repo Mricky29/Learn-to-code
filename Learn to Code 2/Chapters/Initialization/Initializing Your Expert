@@ -1,0 +1,59 @@
+let expert = Expect()
+
+//Two Possible Solutions
+var stepCounter = 0
+var gemCounter = 0
+
+
+//Solution 1
+func moveUP(){
+    expert.moveForward()
+    stepCounter += 1
+    
+    if expert.isBlocked{
+        if expert.isOnGem{
+            expert.collectGem()
+            gemCounter += 1
+            stepCounter = 0
+        }else{expert.turnLockUp()}
+        expert.turnLeft()
+        expert.turnLeft()
+    }
+}
+
+
+while gemCounter < 3{
+    moveUP()
+    
+    if stepCounter == 3 && gemCounter == 1{
+        expert.turnLeft()
+    }
+}
+
+//Solution 2
+/*func solveSide() {
+    expert.moveForward()
+    expert.moveForward()
+    expert.moveForward()
+    if expert.isOnGem {
+        expert.collectGem()
+    } else {
+        expert.turnLockUp()
+    }
+}
+
+func returnToCenter() {
+    expert.turnLeft()
+    expert.turnLeft()
+    expert.moveForward()
+    expert.moveForward()
+    expert.moveForward()
+    expert.turnRight()
+}
+
+for i in 1 ... 4 {
+    solveSide()
+    returnToCenter()
+}
+
+ */
