@@ -1,0 +1,21 @@
+let expert = Expert()
+let character = Character()
+
+expert.moveForward()
+expert.turnLockUp()
+character.moveForward()
+character.collectGem()
+character.moveForward()
+character.turnRight()
+character.moveForward()
+character.moveForward()
+expert.turnLockDown()
+expert.turnLockDown()
+character.moveForward()
+
+for i in 1...1{
+    expert.turnLockUp()
+}
+character.collectGem()
+
+
